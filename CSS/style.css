@@ -26,7 +26,7 @@ color:darkgreen;
 .navi{ 
   
   padding: 2em;
-  display: flex;
+  display: none;
   flex-direction: column; 
   align-items: flex-end;
   font-size: larger; font-weight: bold;
@@ -36,7 +36,13 @@ color:darkgreen;
   padding-bottom: 2em;
   font-size: larger; font-weight: bold;  
   text-align: center;
+  
 }
+.steps{ 
+  margin-left: 12em;
+  
+}
+
 
 
 /* ================================= 
