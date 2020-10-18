@@ -4,11 +4,11 @@
 
 body {
 	line-height: 1.6;
-  color:black;
+  color:#080803;
    }
 
 a { 
-	color:black;
+	color: #080803;
   text-decoration:none;
 }
 
@@ -20,7 +20,7 @@ Navigation
 .name{
 margin-left: 2em;
 padding: 0em;
-color:darkgreen;
+color:#080803;
 }
 
 .navi{ 
@@ -39,10 +39,14 @@ color:darkgreen;
   
 }
 .steps{ 
-  margin-left: 12em;
+  margin-left: 6em;
+
   
 }
-
+.steps2{ 
+  display: none;
+  margin-left: 12em;
+}
 
 
 /* ================================= 
@@ -57,7 +61,7 @@ color:darkgreen;
 /* ---- Layout Containers ---- */
 
 .main-header {
-    background:black;
+    background:#89A64F;
     padding: 1em 0;
     width: 100%;
     display: flex;
@@ -69,7 +73,7 @@ color:darkgreen;
 
 .main-footer {
 	padding: 2em 0;
-  background: darkgreen;
+    background:#89A64F;
   text-align: center;
 
 }
@@ -84,6 +88,13 @@ color:darkgreen;
 
 }
 .name{ margin-left: 12em;
+}
+.steps{
+  display: none;
+}
+
+.steps2{
+  display: flex;
 }
 }
 
