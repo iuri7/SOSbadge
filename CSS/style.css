@@ -3,8 +3,9 @@
 ==================================== */
 
 body {
-	line-height: 1.6;
+	line-height: 1.2;
   color:#080803;
+  widows: 100%;
    }
 
 a { 
@@ -33,13 +34,15 @@ color:#080803;
   
 }
 .subtitle{
-  padding-bottom: 2em;
+  padding-top: 2em;
+  color: #080803;
   font-size: larger; font-weight: bold;  
   text-align: center;
   
 }
 .steps{ 
-  margin-left: 6em;
+  margin-left: 2em;
+  margin-right: 4em;
 
   
 }
@@ -48,6 +51,38 @@ color:#080803;
   margin-left: 12em;
 }
 
+.family{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6em;
+  margin-bottom: 0%;
+}
+
+.family2{
+  display: none;
+  margin-left: 6em;
+  
+}
+
+.Pfamily{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emergencies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6em;
+  margin-bottom: 0%;
+}
+
+.emergencies2{
+  display: none;
+}
+}
 
 /* ================================= 
   Base Layout Styles
@@ -96,6 +131,36 @@ color:#080803;
 .steps2{
   display: flex;
 }
+.family{
+  display: none;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;
+  
+}
+.Pfamily{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.family2{
+  display: flex;
+  margin-left: 2em;
+}
+
+.emergencies{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.emergencies2{
+  display: flex;
+  margin-left: 20em;
+}
+}
 /* ---- Page Elements ---- */
