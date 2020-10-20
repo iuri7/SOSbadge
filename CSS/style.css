@@ -19,9 +19,11 @@ Navigation
 ====================================*/
 
 .name{
-margin-left:0em;
+margin-left:1em;
+margin-right: 1em;
 padding: 0em;
 color:#080803;
+font-size: 2em;
 }
 
 .navi{ 
@@ -41,9 +43,10 @@ color:#080803;
   
 }
 .steps{ 
-  margin-left: 2em;
+  margin-left: -2.5em;
   margin-right: 4em;
   margin-top: 2em;
+  
 
   
 }
@@ -62,9 +65,7 @@ color:#080803;
 
 .family2{
   display: none;
-  margin-left: 6em;
-  
-  
+  margin-left: 6em;  
 }
 
 .Pfamily{
@@ -72,18 +73,44 @@ color:#080803;
   flex-direction: column;
   align-items: center;
   margin-left: 2em;
-  margin-right: 2em;
+  margin-right: 2em;  
   color:#A3A69A;
   font-size: 1em; font-weight: bolder;
-  
-  
-}
+  }
+
+  .techinfo{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 0em;
+  }
+
+  .techinfo2{
+    display: none;
+    margin-left: 6em;  
+  }
+
+  .portaltools{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 0em;
+  }
+
+  .portaltools2{
+    display: none;
+    margin-left: 6em;  
+  }
 
 .emergencies{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 6em;
+  margin-left: 3em;
   margin-bottom: 0%;
 }
 
@@ -137,7 +164,8 @@ color:#080803;
   flex-direction: row;
 
 }
-.name{ margin-left: 4em;
+.name{ 
+  margin-left: 4em;
   font-size: 4em;
 }
 .steps{
@@ -173,6 +201,20 @@ color:#080803;
   margin-left: 2em;
 }
 
+.techinfo{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.techinfo2{
+  display: flex;
+  margin-left: 2em;
+  margin-top: 4em;
+}
+
 .emergencies{
   display: none;
   flex-direction: column;
@@ -184,6 +226,21 @@ color:#080803;
   display: flex;
   margin-left: 20em;
 }
+
+.portaltools{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.portaltools2{
+  display: flex;
+  margin-left: 23em;
+  margin-top: 4em;
+}
+
 .ul{
 margin-left: 8em;
 margin-right: 8em;
