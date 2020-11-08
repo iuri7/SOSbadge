@@ -6,6 +6,7 @@ body {
 	line-height: 1.2;
   color:#080803;
   widows: 100%;
+  font-size: 1em;
    }
 
 a { 
@@ -33,17 +34,32 @@ font-size: 2em;
   flex-direction: column; 
   align-items: flex-end;
   font-size: larger; font-weight: bold;
+  position: fixed;
+  right: 0;
+  background-color: #89A64F;
   
 }
+.nav-button{
+position: fixed;
+right: 0;
+height: 15px;
+width: 15px;
+z-index: 10;
+}
+
+.selector{
+margin-bottom: 0.5em;
+}
+
 .subtitle{
   padding-top: 2em;
   color: #080803;
-  font-size: 2em; font-weight: bold;  
+  font-size: 1.7em; font-weight: bold;  
   text-align: center;
   
 }
 .steps{ 
-  margin-left: -2.5em;
+  margin-left: -4em;
   margin-right: 4em;
   margin-top: 2em;
   
@@ -92,6 +108,22 @@ font-size: 2em;
     margin-left: 6em;  
   }
 
+  .sosbadgeMP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-left: 3.7em;
+    margin-bottom: 0em;
+    
+  }
+  
+  
+  .sosbadgeMP2{
+    display: none;
+    margin-left: 6em;
+  }
+
   .portaltools{ 
     display: flex;
     flex-direction: column;
@@ -110,13 +142,54 @@ font-size: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 3em;
+  margin-left: 2em;
   margin-bottom: 0%;
 }
 
 .emergencies2{
   display: none;
 }
+.price{
+  background-color: #89A64F;
+  color: black;  
+  font-size: 1em; font-weight: bolder;
+ display: flex; 
+ flex-direction: row;
+ height: 100px;
+width: 200px;
+margin-top: 4em;
+margin-left: 1em; 
+}
+
+.contact{
+
+  padding-top: 2em;
+  color: #080803;
+  font-size: 1.7em; font-weight: bold;  
+  text-align: center;
+}
+
+.contactbutton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-left: 8em;
+  margin-bottom: 0em;
+  
+}
+
+
+.contactbutton2{
+  display: none;
+  margin-left: 6em;
+}
+
+.contactquestion{
+  text-align: center;
+  color:#A3A69A;
+  font-size: 1.2em; font-weight: bolder;
+  }
 
 }
 
@@ -146,20 +219,27 @@ font-size: 2em;
 	padding: 2em 0;
   background:#89A64F;
   text-align: center;
+  margin-top: 6em;
 
 }
 .ul{
   margin-left: 2em;
-  margin-right: 2em;
+  margin-right: 2em;    
   color:#A3A69A;
   font-size: 1em; font-weight: bolder;
   
 }
+  
+
+
 
 /* ================================= 
   Media queries
 ==================================== */
 @media screen and (min-width: 1024px) {
+
+ 
+
 .main-header { 
   flex-direction: row;
 
@@ -168,6 +248,13 @@ font-size: 2em;
   margin-left: 4em;
   font-size: 4em;
 }
+
+.subtitle{
+  padding-top: 2em;
+  color: #080803;
+  font-size: 1.7em; font-weight: bold;  
+  text-align: center;
+}
 .steps{
   display: none;
 }
@@ -175,14 +262,14 @@ font-size: 2em;
 .steps2{
   display: flex;
   margin-top: 4em;
-  margin-left: 2em;
+  margin-left: -1em;
 }
 .family{
   display: none;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-left: 2em;
+  margin-left: -1em;
   
 }
 .Pfamily{
@@ -190,7 +277,7 @@ font-size: 2em;
   flex-direction:column;
   align-items: center;
   color:#A3A69A;
-  font-size: 1em; font-weight: bolder;
+  font-size: 1.2em; font-weight: bolder;
   margin-left: 8em;
   margin-right: 8em;
   
@@ -211,7 +298,20 @@ font-size: 2em;
 
 .techinfo2{
   display: flex;
-  margin-left: 2em;
+  margin-left: -1em;
+  margin-top: 7em;
+}
+
+.sosbadgeMP{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;}
+
+.sosbadgeMP2{
+  display: flex;
+  margin-left: 20em;
   margin-top: 4em;
 }
 
@@ -224,7 +324,8 @@ font-size: 2em;
 }
 .emergencies2{
   display: flex;
-  margin-left: 20em;
+  margin-top: 4em;
+  margin-left: -3em;
 }
 
 .portaltools{
@@ -237,15 +338,159 @@ font-size: 2em;
 
 .portaltools2{
   display: flex;
-  margin-left: 23em;
-  margin-top: 4em;
+  margin-left: 0em;
+  margin-right: 2em;
+  margin-top: 2em;
 }
 
 .ul{
 margin-left: 8em;
 margin-right: 8em;
+margin-top: 4em;
 color:#A3A69A;
-font-size: 1em; font-weight: bolder;
+font-size: 1.2em; font-weight: bolder;
 }
+.price{
+  background-color: #89A64F;
+  color: black;
+  font-size: 1em; font-weight: bolder;
+ display: inline-flex; 
+ height: 125px;
+width: 300px;
+margin-left: 6em;
+}
+
+.contactbutton{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.contactbutton2{
+  display: flex;
+  margin-left: 33em;
+  margin-top: 0.5em;
+}
+
+.contactquestion{
+text-align: center;
+color:#A3A69A;
+font-size: 1.2em; font-weight: bolder;
+}
+
+}
+/*
+@media screen and (min-width: 760px) {
+  
+  body {
+    line-height: 1.2;
+    color:#080803;
+    widows: 100%;
+    font-size: 1em;
+     }
+  
+  a { 
+    color: #080803;
+    text-decoration:none;
+  }
+  
+  
+  .main-header { 
+    flex-direction: column;
+  
+  }
+  .name{ 
+    margin-left: 1em;
+    font-size: 4em;
+  }
+  
+  .subtitle{
+    padding-top: 2em;
+    color: #080803;
+    font-size: 1.7em; font-weight: bold;  
+    text-align: center;
+  }
+  .steps{
+    display: none;
+  }
+  
+  .steps2{
+    display: flex;
+    margin-top: 4em;
+    margin-left: 2em;
+  }
+  .family{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 2em;
+    
+  }
+  .Pfamily{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color:#A3A69A;
+    font-size: 1em; font-weight: bolder;
+    margin-left: 8em;
+    margin-right: 8em;
+    
+  }
+  
+  .family2{
+    display: flex;
+    margin-left: 2em;
+  }
+  
+  .techinfo{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 2em;
+  }
+  
+  .techinfo2{
+    display: flex;
+    margin-left: 2em;
+    margin-top: 7em;
+  }
+  
+  .emergencies{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 2em;
+  }
+  .emergencies2{
+    display: flex;
+    margin-left: 20em;
+  }
+  
+  .portaltools{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 2em;
+  }
+  
+  .portaltools2{
+    display: flex;
+    margin-left: 23em;
+    margin-top: 4em;
+  }
+  
+  .ul{
+  margin-left: 8em;
+  margin-right: 8em;
+  margin-top: 4em;
+  color:#A3A69A;
+  font-size: 1em; font-weight: bolder;
+  }
 }
 /* ---- Page Elements ---- */

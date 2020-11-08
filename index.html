@@ -14,15 +14,18 @@
         <image src="images/logosmall.png"  alt="small logo"> </image>
     <h1 class="name">SOS Badge & SafeKeeper</h1>
 </header>
-
-<nav class="navi">
-    <a href="#">Login into your safe space</a>
-    <a href="#">What is an SOS Badge?</a>
-    <a href="#">What does it do?</a>
-    <a href="#">How does it work?</a>
-    <a href="#">When can use it?</a>
-    <a href="#">What is in the portal?</a>
-    <a href="#">How much does it cost?</a>
+<div onclick="naviToggle()" class="nav-button">
+<image  src="images/menu-arrow.png" alt= "menu-arrow.png" with="10" height= "15"></image> 
+</div>
+<nav class="navi" id="navi">
+    <a href="#" class="selector">Login into your safe space</a>
+    <a href="#" class="selector">What is an SOS Badge?</a>
+    <a href="#" class="selector">What does it do?</a>
+    <a href="#" class="selector">How does it work?</a>
+    <a href="#" class="selector">When can use it?</a>
+    <a href="#" class="selector">What is in the portal?</a>
+    <a href="#" class="selector">How much does it cost?</a>
+    <a href="#" class="selector">Contact Us</a>
 </nav>
 
 <body>
@@ -45,8 +48,8 @@
         The SOS message can be sent to security systems for an automatic activation of alarms
         and / or to a remote location inside or outside the premises to ensure the reach of proper help. 
         
-        <image class="techinfo" src="Images\techinfo.png" alt= "card tech info" width="400" height="200" ></image>
-        <image class="techinfo2" src="Images\techinfo.png" alt= "card tech info" width="700" height="350"></image>
+        <image class="techinfo" src="Images\techinfo.png" alt= "card tech info" width="300" height="150" ></image>
+        <image class="techinfo2" src="Images\techinfo.png" alt= "card tech info" width="900" height="450"></image>
 
     </p>
 </div>
@@ -87,6 +90,9 @@
         </ul>
     </p>
 
+    <image class="sosbadgeMP" src="Images\SOSBadgebacgroundMP.png" alt= "contact button" width="250" height="150" ></image>
+    <image class="sosbadgeMP2"src="Images\SOSBadgebacgroundMP.png" alt= "contact button" width="700" height="300"></image>
+
     </div>
 <div> 
 <h1 class="subtitle"> How does it work?</h1>
@@ -112,7 +118,11 @@
 
 <div>
     <h1 class="subtitle">When can I use?</h1>
-    <p>
+    <p class="Pfamily">
+        The SOS Badge can be use in any situation where the user feels unsafe and needs help from authorities
+        or first responders.
+        Different modes can use the our cards for other porposes in the medical, caring facilities
+        and entertaiment.
     <image class="emergencies" src="Images\emergencies.png" alt= "Possible emergencies" width="300" height="150"> </image>
     <image class="emergencies2" src="Images\emergencies.png" alt= "Possible emergencies"> </image>
 </p>
@@ -120,17 +130,55 @@
 
 <div>
     <h1 class="subtitle">What is in the portal?</h1>
-<p>
+<p class="Pfamily">
+    The SafeKeeper™ portal allows you to set up your card user profiles for each one on your family 
+    or organizition, give them levels of permission, as well created procedures for different emergencies
+    and review incidentes throught recording of security system, to improve the response if necessary.
+    Portal also provide other use modes and controls.
+
     <image class="portaltools" src="Images\portaltools.png" alt= "card tech info" width="300" height="200" ></image>
     <image class="portaltools2" src="Images\portaltools.png" alt= "card tech info" width="600" height="600"></image>
 
 </p>
     </div>
-<div class="subtitle">how much does it cost?</div>
 
+    <div>
+        <h1 class="subtitle">How much does it cost?</h1>
+    <p class="Pfamily">
+       We provide different price intructions depending on length of the initial subscription for the SafeKeeper™
+       portal e volume of users in the same household or organization.
+    <ul>
+      <li class="price">SOS Badge & Monthly SafeKeeper™ portal subscription 
+          $39.99 plus $6.99 per month subscription
+      </li>
+
+      <li class="price">SOS Badge & 6 Months SafeKeeper™ portal subscription 
+        $39.99 plus $5.99 per month subscription
+    </li>
+
+    <li class="price">SOS Badge & 12 Months SafeKeeper™ portal subscription 
+        $39.99 plus $3.99 per month subscription
+    </li>
+
+    </ul>
+    
+    </p>
+        </div>
+    
+
+    <div>
+        <h1 class="contact">Contact Us</h1> 
+        <p class="contactquestion"> Do you need help better understanding the SOS Badge?
+    <image class="contactbutton" src="Images\buttons.png" alt= "contact button" width="50" height="50" ></image>
+    <image class="contactbutton2" src="Images\buttons.png" alt= "contact button" width="100" height="100"></image>
+       
+</p>
+    </div>
+        
     <footer class="main-footer">
         <span>&copy;Louisville, KY</span>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
