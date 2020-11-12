@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+  </head>
+  <body class="contactform">    
+    <form action="" method="POST">
+      <header class="main-header">
+        <image src="images/logosmall.png"  alt="small logo"> </image>
+        <h1 class="name"> Contact Form </h1>
+        </header>  
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <div class="contactforminfo">
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="user_firstname">
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="user_lastname"> 
+
+        <label for="email">Email Address:</label>  
+        <input type="emai" id="mail" name="user_email">
+
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">  
+
+        <label for="companyname">Organization Name:</label>
+        <input type="text" id="companyname" name="user_company_name"> 
+
+        <label for="workphone">Work phone number:</label>
+        <input type="tel" id="workphone" name="work_phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+
+        <label for="streetaddress">Street Address:</label>
+        <input type="text" id="streetaddress" name="user_address">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zip_code">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+
+        
+        <label for="contactmsg">Please enter any information or questions you might have it, below:</label>
+        <textarea type="text" id="contactmsg" name="contact_message"></textarea>  
+
+        <button type="submit" class="submitbutton"> submit </button>  
+        </div>       
+        </input>
+    </form>
+
+  </body>
+</html>
