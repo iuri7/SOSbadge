@@ -3,7 +3,7 @@
 ==================================== */
 
 body {
-	line-height: 1.2;
+	line-height: 1.4;
   color:#080803;
   widows: 100%;
   font-size: 1em;
@@ -20,8 +20,9 @@ Navigation
 ====================================*/
 
 .name{
-margin-left:1em;
-margin-right: 1em;
+align-items: center;
+width: 70%;
+height: auto;
 padding: 0em;
 color:#080803;
 font-size: 2em;
@@ -33,15 +34,15 @@ font-size: 2em;
   display: none;
   flex-direction: column; 
   align-items: flex-end;
-  font-size: larger; font-weight: bold;
+  font-size: medium; font-weight: bold;
   position: fixed;
-  right: 0;
+  right: -1;
   background-color: #89A64F;
   
 }
 .nav-button{
 position: fixed;
-right: 0;
+right: -2;
 height: 15px;
 width: 15px;
 z-index: 10;
@@ -59,9 +60,9 @@ margin-bottom: 0.5em;
   
 }
 .steps{ 
-  margin-left: -4em;
-  margin-right: 4em;
+  display: inline;  
   margin-top: 2em;
+  width: 90%
   
 
   
@@ -75,8 +76,9 @@ margin-bottom: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2em;
-  margin-bottom: 0em;
+  width: 60%;
+  height: auto;
+  
 }
 
 .family2{
@@ -99,8 +101,10 @@ margin-bottom: 0.5em;
     flex-direction: column;
     align-items: center;
     margin-top: 2em;
-    margin-left: 2em;
+  
     margin-bottom: 0em;
+    width: 90%;
+    height: auto;
   }
 
   .techinfo2{
@@ -136,14 +140,14 @@ margin-bottom: 0.5em;
   .portaltools2{
     display: none;
     margin-left: 6em;  
-  }
+  } 
 
 .emergencies{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2em;
-  margin-bottom: 0%;
+  width: 90%;
+  margin-top: 3em;
 }
 
 .emergencies2{
@@ -155,7 +159,7 @@ margin-bottom: 0.5em;
   font-size: 1em; font-weight: bolder;
  display: flex; 
  flex-direction: row;
- height: 100px;
+ height: 125px;
 width: 200px;
 margin-top: 4em;
 margin-left: 1em; 
@@ -193,19 +197,20 @@ padding-right: 1em;
   color:#A3A69A;
   font-size: 1.2em; font-weight: bolder;
   }
+ {}
 
-}
-
-/* ================================= 
+  /* ================================= 
   Base Layout Styles
 ==================================== */
 
-* {
+{
   box-sizing: border-box;
 }
 
 
-/* ---- Layout Containers ---- */
+/* ===================================================
+Layout Containers 
+==================================================== */
 
 .main-header {
     background:#89A64F;
@@ -226,36 +231,316 @@ padding-right: 1em;
 
 }
 .ul{
-  margin-left: 2em;
-  margin-right: 2em;    
-  color:#A3A69A;
-  font-size: 1em; font-weight: bolder;
-  
+  margin-left: -0.5em;
+  color: #A3A69A;
+  font-size: 1em; 
+  font-weight: bolder;
+  width:90%;
 }
   
-
-
+/*==================================================================
+   Contact Us Form CSS 
+   ==================================================================*/
+  
+   .contactform{
+    color: #A3A69A ;
+  }
+  
+  .contactforminfo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;  
+    font-size: 2em;
+    font-weight: bolder;
+    width: 70%;
+    margin: auto;  
+    padding: 15%;
+    
+  }
+  
+  .submitbutton{
+    color: black;
+    background-color: #89A64F;
+    font-size: 1.2em;
+  }
 
 /* ================================= 
-  Media queries
+  Media query Tablets
 ==================================== */
-@media screen and (min-width: 1024px) {
 
- 
+
+ @media screen and (min-width:768px) {
+  
+  .name{
+  margin-left:1em;
+  margin-right: 1em;
+  padding: 0em;
+  color:#080803;
+  font-size: 3.5em;
+  }
+  
+  .navi{   
+    padding: 2em;
+    display: none;
+    flex-direction: column; 
+    align-items: flex-end;
+    font-size: larger; font-weight: bold;
+    position: fixed;
+    right: 0;
+    background-color: #89A64F;
+    
+  }
+  .nav-button{
+  position: fixed;
+  right: 0;
+  height: 15px;
+  width: 15px;
+  z-index: 10;
+  }
+  
+  .selector{
+  margin-bottom: 0.5em;
+  }
+  
+  .subtitle{
+    padding-top: 2em;
+    color: #080803;
+    font-size: 3em; 
+    font-weight: bold;  
+    text-align: center;
+    
+  }
+  .steps2{ 
+    display: none;
+    margin-left: 6em;
+    margin-right: 4em;
+    margin-top: 2em;
+    
+  
+    
+  }
+  .steps{ 
+    display: flex;
+    width: 90%;
+  }
+  
+  .family{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .family2{
+    display: none;
+    margin-left: 6em;  
+  }
+  
+  .Pfamily{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; 
+    color:#A3A69A;
+    font-size: 2em; font-weight: bolder;
+    }
+  
+    .techinfo{ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3em;    
+      margin-bottom: 2em;
+    }
+  
+    .techinfo2{
+      display: none;
+      margin-left: 6em;  
+    }
+  
+    .sosbadgeMP{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4em;
+      margin-left: 16em;
+      margin-bottom: 0em;
+      
+    }
+    
+    
+    .sosbadgeMP2{
+      display: none;
+      margin-left: 6em;
+    }
+  
+    .portaltools{ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+      width: 90%;
+      height: auto;
+      margin-bottom: 0em;
+    }
+  
+    .portaltools2{
+      display: none;
+      margin-left: 6em;  
+    }
+  
+  .emergencies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    width: 90%;
+    height: auto;
+  
+  }
+  
+  .emergencies2{
+    display: none;
+  }
+  .price{
+   background-color: #89A64F;
+   color: black;  
+   font-size: 1em; font-weight: bolder;
+   display: space-around; 
+   flex-direction: row;
+   align-content: center;
+   height: 125px;
+  width: 200px;
+  width: 40%;
+  margin-left: 12em;
+  }
+  
+  .contact{
+  
+    padding-top: 2em;
+    color: #080803;
+    font-size: 1.7em; font-weight: bold;  
+    text-align: center;
+  }
+  
+  .contactbutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:10%;
+    height: auto;
+    margin-left: 15em;
+    
+  }
+  
+  
+  .contactbutton2{
+    display: none;
+    margin-left: 6em;
+  }
+  
+  .contactquestion{
+    text-align: center;
+    color:#A3A69A;
+    font-size: 1.5em; font-weight: bolder;
+    }
+  
+
+  
+  /* ================================= 
+    Base Layout Styles
+  ==================================== */
+  
+   {
+    box-sizing: border-box;
+  }
+  
+  
+  /* ====================================
+  Layout Containers
+  ======================================= */
+  
+  .main-header {
+      background:#89A64F;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    
+  }
+  
+  .main-footer {
+    padding: 2em 0;
+    background:#89A64F;
+    text-align: center;
+    margin-top: 6em;
+  
+  }
+  .ul{
+    margin-left: 1em;
+    width: 90%;    
+    color:#A3A69A;
+    font-size: 1.4em; font-weight: bolder;
+    
+  }
+    
+  
+  
+  /*==================================================================
+   Contact Us Form CSS 
+   ==================================================================*/
+  
+  .contactform{
+    color: #A3A69A;
+  }
+  
+ .contactforminfo{
+    display: flex;
+    flex-direction: column;
+    width:70%;  
+    font-size: 2em;
+    font-weight: bolder;
+      
+  }
+  
+  .submitbutton{
+    color: black;
+    background-color: #89A64F;
+    font-size: 1.2em;
+  }
+
+
+
+/*============================================ 
+Media query Large Screens
+=============================================*/
+  
+  @media screen and (min-width: 1024px){
 
 .main-header { 
   flex-direction: row;
+  background:#89A64F;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    
 
 }
 .name{ 
-  margin-left: 4em;
-  font-size: 4em;
+  margin-left: 1em;
+  font-size: 3em;
 }
 
 .subtitle{
-  padding-top: 2em;
+  padding-top: 2.5em;
   color: #080803;
-  font-size: 1.7em; font-weight: bold;  
+  font-size: 2em; font-weight: bold;  
   text-align: center;
 }
 .steps{
@@ -264,120 +549,107 @@ padding-right: 1em;
 
 .steps2{
   display: flex;
-  margin-top: 4em;
-  margin-left: -1em;
+  margin-top: 2em;  
+  width: 80%;
+  height: auto;
+  align-self: start;
+  margin-left: 4em;
+  
+  
 }
 .family{
-  display: none;
+  display: flex;
+  width: 20%;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  margin-left: -1em;
+  align-content: center;
+  margin: auto;
+  margin-left: 22em; 
   
 }
 .Pfamily{
+  line-height: 1.4em;
   display: flex;
   flex-direction:column;
   align-items: center;
+  font-size: 1.3em;
   color:#A3A69A;
-  font-size: 1.2em; font-weight: bolder;
-  margin-left: 8em;
-  margin-right: 8em;
+  font-weight: bolder;
+  width: 80%;
+  height: auto;
+  text-align: center; 
+  margin-left: 6em;
+}
+
+
+.techinfo{
+  
+  flex-direction: column;  
+  align-items: center;
+  width: 85%;
+  margin-left: 2em;
   
 }
 
-.family2{
-  display: flex;
-  margin-left: 2em;
-}
-
-.techinfo{
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-left: 2em;
-}
-
-.techinfo2{
-  display: flex;
-  margin-left: -1em;
-  margin-top: 7em;
-}
-
 .sosbadgeMP{
-  display: none;
+  display: flex;
+  width: 40%;
+  height: auto;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-left: 2em;}
+  margin-left: 23em;}
 
-.sosbadgeMP2{
-  display: flex;
-  margin-left: 20em;
-  margin-top: 4em;
-}
+
 
 .emergencies{
-  display: none;
+  display: flex;
+  width: 85%;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-left: 2em;
-}
-.emergencies2{
-  display: flex;
-  margin-top: 4em;
-  margin-left: -3em;
+  margin-left: 1em;
 }
 
 .portaltools{
-  display: none;
+  display: flex;
+  width: 50%;
+  height: auto;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-left: 2em;
+  margin-left: 20em;
 }
-
-.portaltools2{
-  display: flex;
-  margin-left: 0em;
-  margin-right: 2em;
-  margin-top: 2em;
-}
-
 .ul{
-margin-left: 8em;
-margin-right: 8em;
-margin-top: 4em;
+width:80%;
+margin: auto;
+margin-left: 6em;
+margin-top: 1em;
+font-size: 1.1em;
 color:#A3A69A;
-font-size: 1.2em; font-weight: bolder;
+font-weight: bolder;
 }
 .price{
   background-color: #89A64F;
   color: black;
-  font-size: 1em; font-weight: bolder;
+  font-size: 1.4em; 
+  font-weight: bolder;
   padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: justify;
  display: inline-flex; 
-  height: 100px;
+height: 150px;
 width: 300px;
-margin-left: 4em;
+margin-left: 20em;
+
 }
 
 .contactbutton{
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-left: 2em;
-}
-
-.contactbutton2{
   display: flex;
-  margin-left: 33em;
+  width: 5%;
+  height: auto;
+  margin-left: 33.5em;
   margin-top: 1em;
 }
 
@@ -387,245 +659,36 @@ color:#A3A69A;
 font-size: 1.2em; font-weight: bolder;
 }
 
-}
-/*
-@media screen and (min-width: 768px) {
   
-.name{
-margin-left:1em;
-margin-right: 1em;
-padding: 0em;
-color:#080803;
-font-size: 2em;
-}
-
-.navi{   
-  padding: 2em;
-  display: none;
-  flex-direction: column; 
-  align-items: flex-end;
-  font-size: larger; font-weight: bold;
-  position: fixed;
-  right: 0;
-  background-color: #89A64F;
-  
-}
-.nav-button{
-position: fixed;
-right: 0;
-height: 15px;
-width: 15px;
-z-index: 10;
-}
-
-.selector{
-margin-bottom: 0.5em;
-}
-
-.subtitle{
-  padding-top: 2em;
-  color: #080803;
-  font-size: 2em; font-weight: bold;  
-  text-align: center;
-  
-}
-.steps{ 
-  margin-left: 6em;
-  margin-right: 4em;
-  margin-top: 2em;
-  
-
-  
-}
-.steps2{ 
-  display: none;
-  margin-left: 12em;
-}
-
-.family{ 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 2em;
-  margin-bottom: 0em;
-}
-
-.family2{
-  display: none;
-  margin-left: 6em;  
-}
-
-.Pfamily{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 8em;
-  margin-right: 8em;  
-  color:#A3A69A;
-  font-size: 1em; font-weight: bolder;
-  }
-
-  .techinfo{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
-    margin-left: 1em;
-    margin-bottom: 2em;
-  }
-
-  .techinfo2{
-    display: none;
-    margin-left: 6em;  
-  }
-
-  .sosbadgeMP{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4em;
-    margin-left: 16em;
-    margin-bottom: 0em;
-    
-  }
-  
-  
-  .sosbadgeMP2{
-    display: none;
-    margin-left: 6em;
-  }
-
-  .portaltools{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-bottom: 0em;
-  }
-
-  .portaltools2{
-    display: none;
-    margin-left: 6em;  
-  }
-
-.emergencies{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4em;
-  margin-left: 2em;
-  margin-bottom: 0%;
-
-}
-
-.emergencies2{
-  display: none;
-}
-.price{
-  background-color: #89A64F;
-  color: black;  
-  font-size: 1em; font-weight: bolder;
- display: flex; 
- flex-direction: row;
- height: 100px;
-width: 200px;
-margin-top: 4em;
-margin-left: 16em; 
-}
-
-.contact{
-
-  padding-top: 2em;
-  color: #080803;
-  font-size: 1.7em; font-weight: bold;  
-  text-align: center;
-}
-
-.contactbutton{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-  margin-left: 19em;
-  margin-bottom: 0em;
-  
-}
-
-
-.contactbutton2{
-  display: none;
-  margin-left: 6em;
-}
-
-.contactquestion{
-  text-align: center;
-  color:#A3A69A;
-  font-size: 1.2em; font-weight: bolder;
-  }
-
-}
-
-/* ================================= 
-  Base Layout Styles
-==================================== */
-
-/* {
-  box-sizing: border-box;
-}
-
-
-/* ---- Layout Containers ---- */
-/*
-.main-header {
-    background:#89A64F;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-}
-
-.main-footer {
-	padding: 2em 0;
-  background:#89A64F;
-  text-align: center;
-  margin-top: 6em;
-
-}
-.ul{
-  margin-left: 6em;
-  margin-right: 6em;    
-  color:#A3A69A;
-  font-size: 1em; font-weight: bolder;
-  
-}
-  
-/*
-
-/* Contact Us Form CSS */
-
 .contactform{
   color: #A3A69A ;
 }
 
 .contactforminfo{
   display: flex;
+  width: 70%;
   flex-direction: column;
   align-content: flex-start;  
   font-size: 1.2em;
-  font-weight: bolder;
-  margin-left: 20em;
-  margin-top: 2em;
-  margin-right: 20em;
-  margin-bottom:4em;  
+  font-weight: bolder;  
+  margin-bottom:4em; 
+  margin-top:-7em; 
 }
 
 .submitbutton{
   color: black;
   background-color: #89A64F;
   font-size: 1.2em;
+
 }
+
+
+.submitbutton{
+color: black;
+background-color: #89A64F;
+font-size: 1.2em;
+} 
+
+  }
+
 
