@@ -632,16 +632,16 @@ font-weight: bolder;
 .price{
   background-color: #89A64F;
   color: black;
-  font-size: 1.4em; 
+  font-size: 1.2em; 
   font-weight: bolder;
   padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: justify;
- display: inline-flex; 
-height: 150px;
-width: 300px;
-margin-left: 20em;
+  display: inline-flex;   
+  height: 150px;
+  width: 250px;
+  margin-left: 6em;
 
 }
 
@@ -689,6 +689,6 @@ background-color: #89A64F;
 font-size: 1.2em;
 } 
 
-  }
+}
 
 
