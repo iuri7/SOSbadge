@@ -10,6 +10,9 @@ This Website features:
 3- a contact form. The form can be activated by pressing the contact us button and can be submited by pressing submit. ( doesn't submit to a server yet)
 4- offers a pop up message to confirm submition after the submit button on the contact form is press.
 5- it offers images change and text layout according to different screen sizes- such as steps image and price layout.
+6- I also created an nth-child pseudo- seletor for my li, like certain info and price section.
+
+Please dowload my project to your local machine via Github
 
 
 
